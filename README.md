@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+# React Data Table Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a React application that displays data from an external API source in a table format. It allows you to edit and delete entries in the table, demonstrating knowledge of React, state management.
 
-## Available Scripts
+# Screenshot
 
-In the project directory, you can run:
+![image](https://github.com/Yashgaur908/Alippo/assets/50943957/50415c61-ffeb-41a3-9f86-5ae282e8c3a8)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Live Link
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+https://
 
-### `npm test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To get started with this project on your local machine, follow these steps:
 
-### `npm run build`
+1. Clone the repository to your local machine using `git clone`.
+2. Navigate to the project directory.
+3. Install the required dependencies using `npm install`.
+4. Start the development server using `npm start`.
+5. Open your web browser and go to `http://localhost:3000` to see the application.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Usage
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The application fetches data from the [provided API](https://assets.alippo.com/catalog/static/data.json) and displays it in a table. You can perform the following actions:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Edit: Click the "Edit" button to modify the name of an entry in the table.
+- Delete: Click the "Delete" button to remove an entry from the table.
 
-### `npm run eject`
+## Features
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Fetches data from an external API.
+- Displays data in a table with edit and delete actions.
+- Handles null/empty cases in data.
+- Provides modals for editing and confirming deletions.
+- Maintains state for the table entries.
+- Built with React and TypeScript/JavaScript.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Technologies Used
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- React
+- JavaScript
+- HTML and CSS
+- External API for data source
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Project Structure
 
-## Learn More
+The project structure is organized as follows:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- `src/` - Contains the source code for the React application.
+  - `components/` - Contains React components.
+    - `DeleteModal` - This component opens the modal box to perform the delete operation.
+    - `EditModal` - This component opens the modal box to perform edit operation. 
+    - `Table` -  This component shows the data in tabular form.
+  - `App.js` - The main application component.
+  - `App.css` - Styles for the application.
+- `public/` - Contains the public assets and HTML file.
