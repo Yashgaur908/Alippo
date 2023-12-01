@@ -9,7 +9,7 @@ This is a React application that displays data from an external API source in a 
 
 # Live Link
 
-https://
+[https://alippo.netlify.app](https://alippo.netlify.app/)
 
 ## Getting Started
 
